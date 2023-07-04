@@ -9,8 +9,8 @@ class LightFanControlSkill(MycroftSkill):
 
     def initialize(self):
         GPIO.setmode(GPIO.BCM)
-        GPIO.setup(17, GPIO.OUT)
         GPIO.setup(27, GPIO.OUT)
+        GPIO.setup(22, GPIO.OUT)
 
     @intent_file_handler('turn.light.on.intent')
     def handle_turn_light_on(self, message):
